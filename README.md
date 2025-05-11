@@ -30,35 +30,42 @@ buergeranfragen-projekt/
 │
 ├── src/                  # Python-Skripte: Preprocessing, Training etc.
 │
-├── requirements.txt      # Liste aller Python-Abhängigkeiten
+├── environment.yml       # Conda-Umgebungsdatei mit Paketliste
 └── README.md             # Dieses Dokument
 ```
 
 ---
 
-## Voraussetzungen
+## Entwicklungsumgebung (Conda)
 
-- Python 3.10+
-- Empfohlene Tools:
-  - Anaconda
-  - JupyterLab
-  - VS Code
-  - Alternativ: Google Colab
+Dazu bitte zunächst Anaconda installieren: https://www.anaconda.com/download 
 
-### Wichtige Pakete
+### Einrichtung mit Anaconda (empfohlen)
+
+1. Neue Umgebung erstellen:
 ```bash
-pip install pandas scikit-learn matplotlib seaborn nltk spacy
+conda create -n buergeranfragen python=3.10
 ```
 
----
+2. Umgebung aktivieren:
+```bash
+conda activate buergeranfragen
+```
 
-## Erste Schritte
+3. Pakete installieren:
+```bash
+conda install pandas matplotlib seaborn scikit-learn nltk spacy
+```
 
-1. Erstelle einen Beispiel-Datensatz in `data/raw/`
-2. Starte mit der Datenanalyse in `notebooks/01_analysis.ipynb`
-3. Baue dein Modell in `notebooks/02_modelling.ipynb`
-4. Dokumentiere Ergebnisse in `reports/`
-5. Exportiere Plots nach `outputs/`
+4. Deutsches Sprachmodell für spacy laden (optional):
+```bash
+python -m spacy download de_core_news_sm
+```
 
----
+### Wiederherstellung der Umgebung mit folgendem Befehl
+```bash
+conda env create -f environment
+```
+
+
 
