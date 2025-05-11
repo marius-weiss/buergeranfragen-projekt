@@ -1,0 +1,14 @@
+name: buergeranfragen
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+  - pandas
+  - matplotlib
+  - seaborn
+  - scikit-learn
+  - nltk
+  - spacy
+  - pip
+  - pip:
+      - jupyterlab
