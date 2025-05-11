@@ -67,15 +67,5 @@ python -m spacy download de_core_news_sm
 conda env create -f environment
 ```
 
----
-
-## Erste Schritte
-
-1. Starte JupyterLab oder öffne VS Code
-2. Lade das Notebook `notebooks/01_analysis.ipynb`
-3. Untersuche und verarbeite den Datensatz aus `data/raw/`
-4. Trainiere dein Modell und evaluiere es
-5. Exportiere Plots und Ergebnisse in `outputs/`
-6. Dokumentiere alle Schritte in `reports/`
 
 
