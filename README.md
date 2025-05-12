@@ -57,7 +57,7 @@ conda activate buergeranfragen
 conda install pandas matplotlib seaborn scikit-learn nltk spacy
 ```
 
-4. Deutsches Sprachmodell für spacy laden (optional):
+4. Deutsches Sprachmodell für spacy laden:
 ```bash
 python -m spacy download de_core_news_sm
 ```
